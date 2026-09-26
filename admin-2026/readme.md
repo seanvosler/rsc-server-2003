@@ -1,3 +1,5 @@
+> **Project moved:** Active Admin 2026 development has moved to `seanvosler/OpenRSC-Core-Framework/admin-2026/`. This copy is retained only as historical context from the original 2003Scape exploration.
+
 # Admin 2026
 
 A modern server administration, observability, moderation, and live-world tooling layer for the 2003Scape RuneScape Classic emulator.

@@ -19,6 +19,29 @@ The dashboard:
 
 Read `admin-2026/readme.md` before implementing features.
 
+## Progress tracking
+
+The canonical lightweight progress tracker is:
+
+- `admin-2026/docs/tasklist.md`
+
+Read it before beginning substantive Admin 2026 work.
+
+Agents are responsible for keeping it synchronized with actual project state. When work begins, move the relevant task into **Doing**. While implementing, update the task if scope materially changes. When work is complete, move it into **Done** in the same PR/commit series whenever practical. If work is intentionally deferred, move it to **Back Burner**.
+
+Use only these four states:
+
+- **Doing**
+- **To Do**
+- **Done**
+- **Back Burner**
+
+Keep **Doing** small—normally one or two active items.
+
+The tasklist is not the place for long design notes. Put architecture, rationale, decisions, investigations, and detailed implementation notes in `admin-2026/readme.md`, this file, or a focused document under `admin-2026/docs/`.
+
+Before declaring a contribution complete, verify that `tasklist.md` reflects the resulting state of the project.
+
 ## Repository context
 
 This is a legacy Node.js/CommonJS RuneScape Classic emulator.
@@ -639,11 +662,13 @@ Before coding:
 
 1. read this file
 2. read `admin-2026/readme.md`
-3. inspect relevant runtime files
-4. identify browser-mode impact
-5. identify tick-loop impact
-6. identify security/authorization impact
-7. identify a minimal test strategy
+3. read `admin-2026/docs/tasklist.md`
+4. inspect relevant runtime files
+5. identify browser-mode impact
+6. identify tick-loop impact
+7. identify security/authorization impact
+8. identify a minimal test strategy
+9. move the active task into **Doing** if it is not already there
 
 During implementation:
 
@@ -654,6 +679,7 @@ During implementation:
 5. avoid blocking hot paths
 6. add tests around new pure boundaries
 7. update project documentation if contracts change
+8. keep `tasklist.md` synchronized with material scope/status changes
 
 Before declaring work complete:
 
@@ -664,7 +690,8 @@ Before declaring work complete:
 5. verify server still works with admin disabled
 6. verify unauthorized mutation is rejected
 7. verify dashboard/admin failure does not crash gameplay
-8. summarize known limitations
+8. update `tasklist.md` so completed/deferred work is accurately reflected
+9. summarize known limitations
 
 ## Definition of an acceptable agent contribution
 

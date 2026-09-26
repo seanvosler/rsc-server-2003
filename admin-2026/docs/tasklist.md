@@ -64,6 +64,7 @@ Keep detailed design discussion, ADR-style decisions, and long-form notes elsewh
 ### Phase 2 — Controlled operations
 
 - [ ] Define roles and capability mapping.
+- [ ] Review OpenRSC command taxonomy before finalizing Admin 2026 command scope.
 - [ ] Add admin mutation audit records.
 - [ ] Add player message command.
 - [ ] Add player teleport command.
@@ -87,11 +88,13 @@ Keep detailed design discussion, ADR-style decisions, and long-form notes elsewh
 - [ ] Add entity inspector.
 - [ ] Add shop inspector.
 - [ ] Add spawn inspection.
+- [ ] Evaluate `@2003scape/rsc-world-map` as the base for the live world map.
 - [ ] Add live world map.
 - [ ] Add pathfinding/debug views.
 
 ### Phase 5 — Historical analytics
 
+- [ ] Inspect OpenRSC log views/schema patterns before finalizing historical event storage.
 - [ ] Introduce historical admin/event storage.
 - [ ] Add moderation history.
 - [ ] Add economy-flow analytics.
@@ -113,6 +116,7 @@ Keep detailed design discussion, ADR-style decisions, and long-form notes elsewh
 - [x] Create `admin-2026/readme.md` project manifest.
 - [x] Create `admin-2026/AGENTS.md` agent guidance.
 - [x] Create canonical lightweight task tracker.
+- [x] Complete initial RSC/RuneScape Classic GitHub landscape research and save findings to `admin-2026/docs/research.md`.
 
 ## Back Burner
 

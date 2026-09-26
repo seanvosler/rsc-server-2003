@@ -645,3 +645,30 @@ Do not combine unrelated legacy cleanup with an admin feature unless the admin w
 ## Definition of done for Admin 2026
 
 The project should eventually provide a secure, low-overhead, live view into an RSC world with auditable operator controls while preserving the emulator as the single source of gameplay truth.
+
+
+## Progress tracking
+
+The canonical lightweight project tracker is:
+
+- `admin-2026/docs/tasklist.md`
+
+Humans and agents should read the tasklist before starting substantive Admin 2026 work so they can see what is already complete, what is actively being worked on, what is next, and what has been intentionally deferred.
+
+The tasklist uses four states:
+
+- **Doing** — active work; normally keep this to one or two items.
+- **To Do** — agreed upcoming work.
+- **Done** — completed work that materially changed project state.
+- **Back Burner** — useful ideas intentionally deferred.
+
+Update the tasklist whenever work changes project state. In practice:
+
+1. move a task to **Doing** when implementation begins
+2. keep scope changes reflected in the tasklist while work is underway
+3. move completed work to **Done** in the same PR/commit series whenever practical
+4. move intentionally deferred work to **Back Burner** rather than leaving it ambiguous
+
+Keep the tasklist light. Detailed architecture, decisions, rationale, investigation notes, and long-form documentation belong in this README, `AGENTS.md`, or dedicated documents under `admin-2026/docs/`.
+
+If the tasklist and project implementation disagree, update the tasklist so it reflects reality.
